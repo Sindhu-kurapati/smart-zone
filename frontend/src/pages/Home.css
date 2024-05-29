@@ -1,0 +1,581 @@
+.navbar{
+    background-color: rgb(239, 222, 222);
+    border-radius: 0;
+    margin:  8px auto;
+    height: 13vh;
+    width: 98%;
+    padding: 0 3rem !important;
+}
+.carousel-box {
+    margin-top: 120px;
+}
+#navbarScrollingDropdown{
+    margin-right: 2rem;
+    margin-left: 1rem;
+}
+.navbar-brand{
+    cursor: pointer;
+}
+.carouselImg{
+    width: 95%;
+    height: auto;
+    margin: 0 2.5% ;
+}
+.carousel-caption h3{
+    color: rgb(143, 45, 45);
+}
+.carousel-caption p{
+    color: rgb(71, 241, 29);
+}
+.form_error-message{
+    background: #ff3f3f;
+    color:white;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    padding: 5px;
+}
+.login-form, .register-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.white-background {
+    background-color: #f8f9fa !important;
+    padding: 0 1rem !important;
+}
+.small{
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* --------------------userlogin----------------- */
+.userLogin{
+    background:linear-gradient(45deg,rgb(52, 56, 56),rgb(99, 231, 218),rgb(67, 87, 86));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.userLogin-row{
+    align-items: center;
+}
+.userLoginImg{
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    margin: 2rem;
+    margin-right: 5rem;
+    animation: sliding 3s ease-in 1s infinite alternate;
+}
+@keyframes sliding {
+    0% {
+        transform: translateX(-90%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+.userLogin-form{
+    background-color: rgb(103, 228, 214);
+    box-shadow: -5px -5px #786978, 2px 2px #7b5d7f, 3px 3px #593b57;
+    border-radius: 15px;
+    width: 500px!important;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.userLogin-form h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    animation: slideFromSide 3s ease-in 1s infinite alternate;
+}
+@keyframes slideFromSide {
+    0% {
+        transform: translateX(-60%);
+        color: rgb(229, 62, 16);
+    }50%{
+        color: rgb(180, 27, 58);
+    }
+    100% {
+        transform: translateX(0%);
+        color: rgb(247, 176, 22);
+    }
+}
+
+:focus{
+    outline: none;
+    }
+    .userLogininput-container{
+        float: left;
+        width: 300px;
+        margin: 10px auto;
+        position: relative;
+    }
+    input[class="effect-1"]{
+        color: #ecf0f3;
+        width: 300px;
+        height: 6vh;
+        box-sizing: border-box;
+        letter-spacing: 1px;
+        background-color: rgb(19, 23, 44);
+        border-radius: 3px;
+        border: none;
+    }
+    .effect-1::placeholder{
+        color: rgb(214, 203, 203);
+        padding: 7px!important;
+    }
+    .effect-1~.focus-border{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #faf8f6;
+        transition: 0.4s;
+    }
+    .effect-1:focus~.focus-border {
+        width: 70%;
+        transition: 0.4s;
+    }
+    .userLoginbtn{
+        width: 50%;
+        background-color: #f6f3f3;
+        border: 1px solid #041928;
+        border-radius: 4px;
+        padding: 0 15px;
+        cursor: pointer;
+        height:32px;
+        font-size:14px;
+        font-weight: 600;
+        transition: all 0.2s ease-in-out;
+    }
+    .userLoginbtn:hover {
+        box-shadow: 1px 1px #02051e, 2px 2px #051924, 3px 3px #06121c;
+        transform: translateX(-3px);
+    }
+/* --------------------userRegistration----------------- */
+.userRegistration{
+    background: linear-gradient(45deg, #e2cd76, #d68a57, #6d39bb, #6accb9);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.userRegistration-row{
+    align-items: center;
+}
+.userRegistrationImg{
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    margin: 2rem;
+    margin-right: 5rem;
+    animation:slideBy 3s ease-in 1s infinite reverse;
+}
+@keyframes slideBy {
+    0% {
+        transform: translateX(-90%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+.userRegistration-form{
+    background-color: rgb(222, 226, 227);
+    box-shadow: 1px 1px #550bf6, 2px 2px #7f0ba5, -5px -3px #43046b;
+    border-radius: 15px;
+    width: 500px!important;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: flash 5s ease-in-out infinite;
+}
+@keyframes flash{
+    0%, 50%, 75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
+.userRegistration-form h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    animation: 2s linear 1s infinite running slidein;
+}
+@keyframes slidein {
+    0% {
+        transform: translateX(-50%);
+        color: rgb(214, 14, 47);
+    }
+    50%{
+        color: purple;
+    }
+    100% {
+        transform: translateX(0%);
+        color: orangered;
+    }
+}
+
+:focus{
+    outline: none;
+    }
+    .userRegistrationinput-container{
+        float: left;
+        width: 300px;
+        margin: 10px auto;
+        position: relative;
+    }
+    input[class='effect-2']{
+        color: #d5dee4;
+        width: 300px;
+        height: 6vh;
+        box-sizing: border-box;
+        letter-spacing: 1px;
+        background-color: rgb(175, 139, 125);
+        border-radius: 3px;
+        border: none;
+    }
+    .effect-2::placeholder{
+        color: rgb(60, 58, 58);
+        padding: 7px!important;
+    }
+    .effect-2~.focus-border{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #350923;
+        transition: 0.4s;
+    }
+    .effect-2:focus~.focus-border {
+        width: 70%;
+        transition: 0.4s;
+    }
+    .userRegistrationbtn{
+        color: #d4e3f3;
+        background-color: #520557;
+        border: 1px solid #e1dae2;
+        border-radius: 4px;
+        padding: 0 15px;
+        cursor: pointer;
+        height:32px;
+        font-size:14px;
+        transition: all 0.2s ease-in-out;
+    }
+    .userRegistrationbtn:hover {
+        box-shadow: 1px 1px #060929, 2px 2px #16033d, 3px 3px #1a0336;
+        transform: translateX(-3px);
+    }
+/* --------------------sellerLogin----------------- */
+.sellerLogin{
+    background:linear-gradient(5deg,rgb(239, 154, 154),rgb(220, 207, 207),rgb(103, 25, 96));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sellerLogin-row{
+    align-items: center;
+}
+.sellerLoginImg{
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    margin: 2rem;
+    margin-right: 5rem;
+    animation: bounce 1s infinite;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+}
+.sellerLogin-form{
+    background: linear-gradient(5deg,rgba(63, 51, 88, 0.29),rgb(249, 248, 248));
+    box-shadow: -5px -5px #5c3351, 2px 2px #7b5d7f, 3px 3px #593b57;
+    border-radius: 15px;
+    width: 500px!important;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: slideInFromTop 1s ease-in-out forwards;
+}
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-200%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.sellerLogin-form h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    animation: slideFromSide 0.5s ease-in 1s infinite alternate;
+}
+@keyframes slideFromSide {
+    0% {
+        transform: translateY(-10%);
+        color: rgb(41, 212, 52);
+    }50%{
+        transform: translateY(20%);
+        color: rgb(212, 139, 139);
+    }
+    100% {
+        transform: translateY(10%);
+        color: rgb(250, 77, 46);
+    }
+}
+
+:focus{
+    outline: none;
+    }
+    .sellerLogininput-container{
+        float: left;
+        width: 300px;
+        margin: 10px auto;
+        position: relative;
+    }
+    input[class="effect-3"]{
+        color: #dfd819;
+        width: 300px;
+        height: 6vh;
+        box-sizing: border-box;
+        letter-spacing: 1px;
+        background-color: rgb(99, 76, 101);
+        border-radius: 3px;
+        border: none;
+    }
+    .effect-3::placeholder{
+        color: rgb(208, 191, 191);
+        padding: 7px!important;
+    }
+    .effect-3~.focus-border{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color:rgb(212, 139, 139);
+        transition: 0.4s;
+    }
+    .effect-3:focus~.focus-border {
+        width: 70%;
+        transition: 0.4s;
+    }
+    .sellerLoginbtn{
+        color: #00070f;
+        background:linear-gradient(2deg,rgb(212, 139, 139),rgb(245, 239, 240));
+        border: 1px solid #f2f6f9;
+        border-radius: 4px;
+        padding: 0 15px;
+        cursor: pointer;
+        height:32px;
+        font-size:14px;
+        font-weight: 600;
+        transition: all 0.2s ease-in-out;
+    }
+    .sellerLoginbtn:hover {
+        box-shadow: 1px 1px #591d5f, 2px 2px #4b1d5e, 3px 3px #031b2f;
+        transform: translateX(-3px);
+    }
+/* --------------------sellerRegistration---------------------- */
+.sellerRegistration{
+    background: linear-gradient(195deg, #ef6a11,rgb(173, 109, 173), #ae85ec, #2ddfbc, #f2c308);
+}
+.sellerRegistration-row{
+    height: 100vh;
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+.sellerRegistrationImg{
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    margin: 2rem;
+    animation: flipout 5s ease-in-out infinite alternate;
+}
+@keyframes flipout {
+    0% {
+        transform: perspective(1400px) rotateY(0);
+    }
+    100% {
+        transform: perspective(1400px) rotateY(360deg);
+    }
+}
+.sellerRegistration-form{
+    background:linear-gradient(25deg,rgb(141, 38, 139), white,rgb(155, 46, 155),white,rgb(122, 14, 120));
+    box-shadow: 1px 1px #550bf6, 2px 2px #7f0ba5, -5px -3px #43046b;
+    border-radius: 15px;
+    height: 75vh;
+    width: 500px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: flipin 1s ease-in-out infinite alternate;
+}
+
+@keyframes flipin{
+    0% {
+        transform: perspective(200px) rotateY(0);
+    }
+    25%{
+        transform: perspective(200px) rotateY(1deg);
+    }
+    50%{
+        transform: perspective(400px) rotateY(0);
+    }
+    75%{
+        transform: perspective(200px) rotateY(1deg);
+    }
+    100% {
+        transform: perspective(200px) rotateY(0);
+    }
+}
+.sellerRegistration-form h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    animation: 2s linear 1s infinite running bounce;
+}
+@keyframes bounce{
+    0% {
+        transform: translateY(-50px);
+        color: rgb(252, 239, 97);
+    }
+    50%{
+        color: rgb(238, 2, 2);
+    }
+    100% {
+        transform: translateY(0px);
+        color: rgb(2, 87, 111);
+    }
+}
+
+:focus{
+    outline: none;
+    }
+    .sellerRegistrationinput-container{
+        float: left;
+        width: 300px;
+        margin: 10px auto;
+        position: relative;
+    }
+    input[class='effect-4']{
+        color: #280327;
+        font-weight: 500;
+        width: 300px;
+        height: 6vh;
+        box-sizing: border-box;
+        letter-spacing: 1px;
+        background-color: rgb(246, 238, 235);
+        border-radius: 3px;
+        border: none;
+    }
+    .effect-4::placeholder{
+        color: rgb(3, 3, 3);
+        padding: 7px!important;
+    }
+    .effect-4~.focus-border{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #350923;
+        transition: 0.4s;
+    }
+    .effect-4:focus~.focus-border {
+        width: 70%;
+        transition: 0.4s;
+    }
+    .sellerRegistrationbtn{
+        color: #d4e3f3;
+        background-color: #520557;
+        border: 2px solid #e1dae2;
+        border-radius: 4px;
+        padding: 0 15px;
+        cursor: pointer;
+        height:32px;
+        font-size:14px;
+        transition: all 0.2s ease-in-out;
+    }
+    .sellerRegistrationbtn:hover {
+        box-shadow: 1px 1px #050829, 2px 2px #16033d, 3px 3px #1a0336;
+        transform: translateX(-3px);
+    }
+
+
+
+@media screen and (max-width: 330px){
+/* ---------------user login--------------------- */
+    .userLogin{
+        height: auto;
+        width: 100%;
+    }
+    .userLogin-row{
+        height: 100vh;
+    }
+    .userLoginImg{
+        height: 200px;
+        width: 300px;
+    }
+    .userLogin-form{
+        width: 300px !important;
+    }
+    input[class="effect-1"]{
+        width: 250px;
+        margin: 0 1.5rem;
+    }
+    .effect-1:focus~.focus-border {
+        margin-left: 1.5rem;
+    }
+    
+    /* ----------------------user registration------------------ */
+    .userRegistration{
+        height: auto;
+    }
+    .userRegistration-row{
+        height: 100vh;
+    }
+    .userRegistrationImg{
+        height: 200px ;
+        width: 300px;
+    }
+    /* --------------------------seller login------------------------ */
+    .sellerLogin{
+        width: 100%;
+    }
+
+    /* ----------------seller registration----------------- */
+    .sellerRegistration{
+        width: 100%!important;
+        height: auto;
+    }
+    .sellerRegistrationImg{
+        width: 100px;
+    }
+
+}
